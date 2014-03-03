@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+	ServerAlias www.task.local
+    ServerName task.local
+    DocumentRoot "C:\xampp\htdocs\task\web"
+    DirectoryIndex app_dev.php
+    <Directory "C:\xampp\htdocs\task\web">
+        AllowOverride All
+        Allow from All
+     </Directory>
+</VirtualHost>

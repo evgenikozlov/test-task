@@ -1,0 +1,7 @@
+task_task_homepage:
+    pattern:  /
+    defaults: { _controller: TaskTaskBundle:Product:index }
+
+TaskTaskBundle_product:
+        resource: "@TaskTaskBundle/Resources/config/routing/product.yml"
+        prefix:   /product

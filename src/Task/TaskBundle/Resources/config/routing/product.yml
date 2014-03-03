@@ -1,0 +1,30 @@
+task_product:
+    pattern:  /
+    defaults: { _controller: "TaskTaskBundle:Product:index" }
+
+task_product_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TaskTaskBundle:Product:show" }
+
+task_product_new:
+    pattern:  /new
+    defaults: { _controller: "TaskTaskBundle:Product:new" }
+
+task_product_create:
+    pattern:  /create
+    defaults: { _controller: "TaskTaskBundle:Product:create" }
+    requirements: { _method: post }
+
+task_product_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TaskTaskBundle:Product:edit" }
+
+task_product_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TaskTaskBundle:Product:update" }
+    requirements: { _method: post|put }
+
+task_product_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TaskTaskBundle:Product:delete" }
+    requirements: { _method: post|delete }

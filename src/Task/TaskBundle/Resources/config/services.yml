@@ -1,0 +1,18 @@
+services:
+    task.task.admin.category:
+        class: Task\TaskBundle\Admin\CategoryAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: task, label: Categories }
+        arguments:
+            - ~
+            - Task\TaskBundle\Entity\Category
+            - 'TaskTaskBundle:CategoryAdmin'
+ 
+    task.task.admin.product:
+        class: Task\TaskBundle\Admin\ProductAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: task, label: Products }
+        arguments:
+            - ~
+            - Task\TaskBundle\Entity\Product
+            - 'TaskTaskBundle:ProductAdmin'
